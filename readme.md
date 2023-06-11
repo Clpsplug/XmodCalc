@@ -22,7 +22,9 @@ in rhythm games where the scroll speed is tied to BPM, your scroll speed can als
 > If you play a chart with BPM of 160 and you're most comfortable using Xmod of x3.0,
 > your optimal reading BPM is 480.
 
-Unless the game offers such feature, you probably have to work it out in your head, which can lead to a mistake and your unfortunate demise.
+If you know your optimal reading BPM, you can technically pick optimal Xmod for your gameplay,
+but the optimal Xmod is different for each chart b/c not all songs have the same BPM.  
+So, unless the game offers such feature, you have to work it out in your head, which can lead to a mistake and your unfortunate demise.
 
 This app calculates optimal Xmod (i.e., Xmod that does not make the scroll speed exceed your optimal speed)
 from your optimal reading BPM.  
