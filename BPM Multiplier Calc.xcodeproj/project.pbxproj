@@ -12,6 +12,7 @@
 		A51162D32A2F79CD006057AF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51162D22A2F79CD006057AF /* MainView.swift */; };
 		A51162D52A2F79CF006057AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51162D42A2F79CF006057AF /* Assets.xcassets */; };
 		A51162D82A2F79CF006057AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51162D72A2F79CF006057AF /* Preview Assets.xcassets */; };
+		A51CF6202A3DB1C800A564E2 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CF61F2A3DB1C800A564E2 /* Domain.swift */; };
 		A58121882A34A9A000FBDC95 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58121872A34A9A000FBDC95 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		A51162D22A2F79CD006057AF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A51162D42A2F79CF006057AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51162D72A2F79CF006057AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A51CF61F2A3DB1C800A564E2 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		A58121872A34A9A000FBDC95 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				A58121872A34A9A000FBDC95 /* SettingsView.swift */,
 				A51162D42A2F79CF006057AF /* Assets.xcassets */,
 				A51162D62A2F79CF006057AF /* Preview Content */,
+				A51CF61F2A3DB1C800A564E2 /* Domain.swift */,
 			);
 			path = "BPM Multiplier Calc Watch App";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				A51162D32A2F79CD006057AF /* MainView.swift in Sources */,
 				A58121882A34A9A000FBDC95 /* SettingsView.swift in Sources */,
 				A51162D12A2F79CD006057AF /* BPM_Multiplier_CalcApp.swift in Sources */,
+				A51CF6202A3DB1C800A564E2 /* Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
