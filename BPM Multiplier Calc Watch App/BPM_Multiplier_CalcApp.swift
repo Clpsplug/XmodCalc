@@ -1,7 +1,3 @@
-/// BPM_Multiplier_CalcApp
-/// Author - Collapsed Plug <hsp.tosh.5200113@gmail.com>
-/// License - 
-
 import SwiftUI
 
 @main

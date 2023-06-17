@@ -1,6 +1,3 @@
-/// SettingsView
-/// Author - Collapsed Plug <hsp.tosh.5200113@gmail.com>
-/// License -
 import SwiftUI
 
 struct SettingsView: View {
