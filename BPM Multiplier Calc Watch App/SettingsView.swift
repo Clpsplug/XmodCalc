@@ -3,12 +3,12 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.presentationMode) private var presentationMode
     @EnvironmentObject private var settings: Settings
-    
+
     @State private var preferredBPM: Int = 0
     @State private var premiumAvailable: Bool = false
-    
+
     @State private var currentChange: Int = 0
-    
+
     var body: some View {
         VStack {
             Text("Your preferred BPM")
@@ -16,7 +16,7 @@ struct SettingsView: View {
                 .font(.system(size: 18))
                 .focusable()
                 .multilineTextAlignment(.center)
-            HStack{
+            HStack {
                 Button(action: {
                     self.preferredBPM = clampToSupportedValue(value: self.preferredBPM - 5)
                 }) {
@@ -27,10 +27,12 @@ struct SettingsView: View {
                 .buttonStyle(.plain)
                 .frame(width: 10, height: 17, alignment: .leading)
                 .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 0))
-                
-                Text("\(clampToSupportedValue(value: self.preferredBPM + self.currentChange), specifier: "%03d")")
-                    .font(GetRoundedFont(fontSize: 50))
-                    .frame(maxWidth: .infinity, alignment: .center)
+
+                Text(
+                    "\(clampToSupportedValue(value: self.preferredBPM + self.currentChange), specifier: "%03d")"
+                )
+                .font(GetRoundedFont(fontSize: 50))
+                .frame(maxWidth: .infinity, alignment: .center)
                 Button(action: {
                     self.preferredBPM = clampToSupportedValue(value: self.preferredBPM + 5)
                 }) {
@@ -48,7 +50,7 @@ struct SettingsView: View {
         }
         .gesture(drag(val: self.$preferredBPM, change: self.$currentChange, callback: nil))
         .padding()
-        .onAppear{
+        .onAppear {
             self.preferredBPM = settings.preferredBPM
             self.premiumAvailable = settings.premiumAvailable
         }
@@ -61,9 +63,10 @@ struct SettingsView: View {
         .digitalCrownRotation(
             detent: $preferredBPM, from: 1, through: 999, by: 1,
             sensitivity: .medium
-        ){_ in
+        ) { _ in
             self.settings.preferredBPM = self.preferredBPM
-        } onIdle: {}
+        } onIdle: {
+        }
     }
 
     private var backButton: some View {
@@ -72,10 +75,10 @@ struct SettingsView: View {
             self.settings.premiumAvailable = self.premiumAvailable
             self.settings.save()
         }) {
-            HStack{
+            HStack {
                 Image(systemName: "chevron.left")
                     .foregroundColor(Color.accentColor)
-                Text("Settings").font(.system(size:16)).foregroundColor(Color.accentColor)
+                Text("Settings").font(.system(size: 16)).foregroundColor(Color.accentColor)
             }
         }
     }
@@ -86,4 +89,3 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView()
     }
 }
-

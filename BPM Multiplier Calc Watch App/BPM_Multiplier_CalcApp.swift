@@ -6,5 +6,5 @@ struct BPM_Multiplier_Calc_Watch_App: App {
         WindowGroup {
             MainView()
         }
-    }    
+    }
 }
